@@ -13,6 +13,7 @@ Technology Used
     • CSS
     • Bootstrap
     • JavaScript
+    
 Features
 This project contains real time validation like:
     • it will suggest your email id with some random numbers once the user had entered the first and last name.
