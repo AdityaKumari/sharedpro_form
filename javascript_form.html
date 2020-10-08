@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script><style>
+        body{
+    
+            top: 0px;
+left: 0px;
+width: 100%;
+height: 100%;
+background: #000000A3 0% 0% no-repeat padding-box;
+opacity: 1;
+
+        }
+       
+        .whitebox{
+        
+            margin: auto;
+            top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+position: absolute;
+width: 80%;
+height: 90%;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 10px 10px #00000029;
+border: 2px solid #707070;
+opacity: 1;
+display: flex;
+flex: 50%;
+        }
+        .mainbox{
+            position: relative;
+            
+ 
+            
+width: 50%;
+height:100%;
+background: transparent linear-gradient(318deg, #1B3123 0%, #2BC690 100%);
+opacity: 1;
+margin: 0%;
+overflow: hidden;
+align-self:stretch;
+float:right;
+
+        }
+        .text-input{
+margin-top: 20px;
+
+  padding: 10px;
+  width: 100%;
+  height: 50px;
+  background: #f0f0f0 ;
+  box-shadow: 0px 2px 4px #00000029;
+  border-radius: 5px;
+  border-color: #f0f0f0;
+  opacity: 1;
+
+        }
+
+.text-input:focus{
+
+    border-color: black;
+    background-color: blanchedalmond;
+}
+
+.text-input.error{
+    border-color: red;
+}
+
+        .form-input{
+            top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+width: 80%;
+height: auto;
+
+
+position: absolute;
+            background-color:transparent;
+
+        }
+        .btn-reg{
+           margin: auto;
+           padding: auto;
+  width: 190px;
+  height: 65px;
+  box-shadow: 0px 10px 50px #00000029;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  opacity: 1;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  
+
+        }
+        .btn-reg:hover{
+            background: #000000A3 0% 0% no-repeat padding-box;
+            opacity: 0.7;
+
+        }
+        .btn-text{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+
+  opacity: 1;
+        }
+        .registration{
+        
+padding: 5%;
+height: auto;
+width:50%;
+float: left;
+align-self: flex-end;
+position: relative;           
+  font-style: normal;
+  font-weight:800;
+  font-size: 100px;
+  font-family: "montserrat";
+
+  color: #000000;
+  opacity: 0.7;
+        }
+        h6{
+       
+            position: relative;
+        }
+        .err{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="whitebox">
+       
+                <div class="registration"> Registration form....</div>
+           
+                <div class="mainbox ">
+                    <div class="form-input">
+                        <form action="" id="form">
+                           <div class="row">
+                            <div class="col-md-6">
+                                <input type="text" class="text-input" value="" placeholder="First Name" id="fname">
+                                <h6 id="smal"></h6>
+
+                               </div>
+                               <div class="col-md-6">
+                                <input type="text" class="text-input" placeholder="Last Name" id="lname">
+                                <h6></h6>
+
+                               </div>
+                           </div>
+                           
+                           <input type="email" class="text-input" placeholder="E-mail" id="email">
+                         
+                          
+                           <h6>  </h6>
+                           <input type="number" class="text-input" placeholder="Phone No" id="phone">
+                           <h6 id="psmal"></h6>
+                           <div class="row">
+                            <div class="col-md-6" style="font-style: normal;
+                            font-weight: normal;
+                            font-size: 30px;
+                            text-align: right;
+                            color: #f0f0f0;
+                            margin: auto;
+                            opacity: 1;">
+                               Date Of Birth
+                               </div>
+                               <div class="col-md-6">
+                                <input type="date" class="text-input" placeholder="Name" id="dob">
+                                <h6></h6>
+
+                               </div>
+                           </div>
+                           <input type="password" class="text-input" placeholder="Password" id="password">
+                           <h6 id="pasmal"></h6>
+                           <input type="password" class="text-input" placeholder="Confirm-Password" id="cpassword">
+                           <h6 id="cpasmal"></h6>
+                           <br>
+                            
+                    </form>
+                    <button class="btn-reg" onclick="reload()" id="btn" >Register</button>
+                            
+            
+                    </div>
+                       
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    const form=document.getElementById("form");
+    const fname= document.getElementById("fname");
+    const lname= document.getElementById("lname");
+    const email=document.getElementById("email");
+    const phone=document.getElementById("phone");
+    const dob=document.getElementById("dob");
+    const password=document.getElementById("password");
+    const cpassword=document.getElementById("cpassword");
+    const smal=document.getElementById('saml');
+    let ran=Math.floor(Math.random()*100)+1;
+
+    form.addEventListener('submit',(event) => {
+        event.preventDefault();
+       
+    })
+  fname.oninput=function(){
+      if (this.value==""){
+      document.getElementById('smal').innerHTML="first name cannot be empty";
+      document.getElementById('smal').classList.add("err");
+      fname.classList.add("error");
+      email.value="@Sharedpro.com";
+      document.getElementById("btn").disabled = true;
+
+      }
+      else{
+        email.value=this.value+lname.value+ran+"@sharedpro.com";
+
+      document.getElementById('smal').innerHTML=" ";
+      fname.classList.remove("error");
+      document.getElementById("btn").disabled = false;
+
+      }
+      
+
+  }
+  lname.oninput=function(){
+      
+        email.value=fname.value+lname.value+ran+"@sharedpro.com";
+        email.style.backgroundColor="blanchedalmond";
+}
+      email.onclick=function(){
+          email.style.backgroundColor="#f0f0f0";
+      }
+      phone.onchange=function(){
+         var n=phone.value;
+         var num =n.toString();
+         if (num.length!=10)
+         {
+
+      document.getElementById('psmal').innerHTML="please enter a valid phone number";
+      document.getElementById('psmal').classList.add("err");
+     
+
+         }
+         else{
+            document.getElementById('psmal').innerHTML="";
+        
+
+
+         }
+
+
+
+      }
+      password.oninput=function(){
+        
+          let len=this.value.length;
+          console.log(len);
+          if(len<3)
+          {
+            document.getElementById('pasmal').innerHTML="week";
+            pasmal.style.color="red";
+
+
+          }
+          else if (len <6){
+            document.getElementById('pasmal').innerHTML="medium";
+            pasmal.style.color="yellow";
+          }
+          else {
+            document.getElementById('pasmal').innerHTML="strong";
+            pasmal.style.color="blue";
+          }
+          }
+          password.onchange=function(){
+            var lowerCaseLetters = /[a-z]/g;
+        var upperCaseLetters = /[A-Z]/g;
+  var numbers = /[0-9]/g;
+  
+  if(!password.value.match(lowerCaseLetters)){
+    document.getElementById('pasmal').innerHTML="your Password must contain at least an uppercase, an lowercase and a number";
+    pasmal.style.color="red";
+    password.classList.add("error");
+
+
+      
+
+  }
+  else if(!password.value.match(upperCaseLetters)){
+    document.getElementById('pasmal').innerHTML="your Password must contain at least an uppercase and a number";
+    pasmal.style.color="red";
+    password.classList.add("error");
+
+
+      
+
+  }
+  else if(!password.value.match(numbers)){
+    document.getElementById('pasmal').innerHTML="your Password must contain at least one number";
+    password.classList.add("error");
+    pasmal.style.color="red";
+
+      
+
+  }
+  else{
+    password.classList.remove("error");
+
+  }
+
+
+
+          }
+          cpassword.onchange=function(){
+              if(this.value==password.value)
+              {
+                document.getElementById('cpasmal').innerHTML="";
+                cpassword.classList.remove("error");
+                document.getElementById("btn").disabled = false;
+
+              }
+              else{
+                document.getElementById('cpasmal').innerHTML="password doesnot match";
+                cpassword.classList.add("error");
+                cpasmal.style.color="red";
+                document.getElementById("btn").disabled = true;
+
+
+
+              }
+          }
+
+      function reload(){
+          location.reload();
+
+      }
+
+
+
+    </script>
+</body>
+</html>
